@@ -25,7 +25,7 @@ void loop() {
   Serial.println(distance4);
 
   // If the upward sensor detects an object at least 2 meters away, activate the buzzer
-  if (distance4 >= 200) {
+  if (distance4 <= 200) {
     digitalWrite(buzzerPin, HIGH); // Turn on the buzzer
     delay(1000);                   // Wait for a second
     digitalWrite(buzzerPin, LOW);  // Turn off the buzzer
